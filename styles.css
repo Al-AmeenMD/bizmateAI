@@ -201,6 +201,22 @@ img {
     width: auto;
 }
 
+.logo-circular {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--primary-alpha-20);
+    box-shadow: 0 0 20px var(--primary-alpha-10), 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all var(--transition-base);
+}
+
+.logo-circular:hover {
+    border-color: var(--primary);
+    box-shadow: 0 0 30px var(--primary-alpha-20), 0 4px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
 .nav-links {
     display: flex;
     align-items: center;
